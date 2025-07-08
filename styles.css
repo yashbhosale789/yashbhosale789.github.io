@@ -1,0 +1,120 @@
+:root {
+    --navy: #1C2526;
+    --off-white: #F5F6F5;
+    --gold: #D4A017;
+    --gray: #6C757D;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: var(--off-white);
+    color: var(--navy);
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: 'Poppins', sans-serif;
+}
+
+.navbar {
+    background-color: var(--navy);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand,
+.nav-link {
+    color: var(--off-white) !important;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: var(--gold) !important;
+}
+
+.hero {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, var(--navy) 0%, #2E3B3E 100%);
+    color: var(--off-white);
+    text-align: center;
+}
+
+#particles-js {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+}
+
+.section-title {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 2rem;
+}
+
+.section-title::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    width: 50px;
+    height: 3px;
+    background-color: var(--gold);
+    transform: translateX(-50%);
+}
+
+.card {
+    border: none;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.btn-primary {
+    background-color: var(--navy);
+    border-color: var(--navy);
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: var(--gold);
+    border-color: var(--gold);
+    color: var(--navy);
+}
+
+.progress-bar {
+    background-color: var(--gold);
+}
+
+.modal-content {
+    background-color: var(--off-white);
+}
+
+.contact-icon {
+    color: var(--navy);
+    transition: color 0.3s ease;
+}
+
+.contact-icon:hover {
+    color: var(--gold);
+}
+
+footer {
+    background-color: var(--navy);
+    color: var(--off-white);
+}
